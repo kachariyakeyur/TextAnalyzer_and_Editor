@@ -1,7 +1,7 @@
 import "./Components/Style.css"
 import Navbar from "./Components/Navbar"
 import Textform from "./Components/Textform";
-import About from "./Components/About.js";
+// import About from "./Components/About.js";
 // import {
 //   BrowserRouter as Router,
 //   Routes,

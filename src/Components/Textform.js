@@ -35,16 +35,16 @@ function Textform() {
 
   return (
     <>
-      <div>
+      <div className='container'>
         <div className="head" href="/" >Enter Text below</div>
         <textarea name="text" id="textarea" placeholder="Enter text here" value={text} onChange={onChangefun} rows='8'></textarea>
       </div>
       <div className="container">
 
-        <button type="button" className="btn btn-light mx-2" onClick={Lowerclick}>To Lower</button>
-        <button type="button" className="btn btn-light mx-2" onClick={Upperclick}>To Upper</button>
-        <button  style={{width:"170px"}} type="button" className="btn btn-light mx-2" onClick={space}>Remove Extra Space</button>
-        <button style={{width:"70px"}} type="button" className="btn btn-light mx-2" onClick={clear}>Clear</button>
+        <button type="button" className="btn btn-light mx-1 my 1" onClick={Upperclick}>To Upper</button>
+        <button type="button" className="btn btn-light mx-1 my-1" onClick={Lowerclick}>To Lower</button>
+        <button  style={{width:"170px"}} type="button" className="btn btn-light mx-1 my-1" onClick={space}>Remove Extra Space</button>
+        <button style={{width:"70px"}} type="button" className="btn btn-light mx-1 my-1" onClick={clear}>Clear</button>
 
       </div>
 
