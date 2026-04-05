@@ -1,30 +1,28 @@
 import "./Components/Style.css"
 import Navbar from "./Components/Navbar"
 import Textform from "./Components/Textform";
-// import About from "./Components/About.js";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import About from "./Components/About.js";
+import {
+  HashRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
   <>
- {/* <Router> */}
+ <Router>
     <Navbar/>
    
-    {/* <Routes> */}
+    <Routes>
      
-        {/* <Route exact path="/" element={<Textform />} /> */}
-        <Textform/>
+        <Route exact path="/" element={<Textform />} />
+   
+        <Route exact path="/about" element={<About />} />
      
-    
-        {/* <Route exact path="/about" element={<About />} /> */}
-     
-    {/* </Routes> */}
+    </Routes>
 
-  {/* </Router> */}
+  </Router>
   </>
   );
 }

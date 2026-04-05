@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./Style.css"
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 const Navbar = () => {
@@ -50,8 +50,8 @@ const Navbar = () => {
   return (
     <> 
       <div className="navbar">
-        <a className="menu" href='/'><b>Text-Convert</b></a>
-        {/* <Link className="menu" to='/about'><b>About</b></Link> */}
+        <Link className="menu" to='/'><b>Text-Convert</b></Link>
+        <Link className="menu" to='/about'><b>About</b></Link>
 
 
         <div className="form-check form-switch">
